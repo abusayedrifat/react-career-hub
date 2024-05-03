@@ -2,9 +2,12 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import CategoryList from "../CategoryList/CategoryList";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+import { useState } from "react";
 
 const Home = () => {
     const featuredJobs = useLoaderData()
+
+    const [showJobs, setShowJobs] = useState(4);
     return (
         <div >
             <Banner></Banner>
@@ -13,8 +16,11 @@ const Home = () => {
             <h1 className='text-5xl font-bold text-center mt-36'>Featured Jobs</h1>
             <div className="grid grid-cols-2 gap-8 my-20">
             {
-                featuredJobs.map( jobs => <FeaturedJobs jobs={jobs}></FeaturedJobs>)
+                featuredJobs.slice(0, showJobs).map( jobs => <FeaturedJobs jobs={jobs}></FeaturedJobs>)
             }
+            </div>
+            <div className={showJobs === featuredJobs.length && 'hidden'}>
+            <button onClick={()=> setShowJobs(featuredJobs.length)} className="btn relative left-[50%] -translate-x-[50%]">Show All</button>
             </div>
            </div>
         </div>
