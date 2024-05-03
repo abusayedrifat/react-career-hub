@@ -6,8 +6,8 @@ const Header = () => {
     <>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/statistics'>Statistics</NavLink></li>
-    <li><NavLink to='/appliedJobs'>Applied Jobs</NavLink></li>
-    <li><NavLink to='/bl og'>Blog</NavLink></li>
+    <li><NavLink to='/appliedJob'>Applied Jobs</NavLink></li>
+    <li><NavLink to='/blog'>Blog</NavLink></li>
     </>
     return (
         <div>
@@ -26,7 +26,7 @@ const Header = () => {
     <a className="btn btn-ghost text-xl">CareerHub</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 flex gap-6">
         {links}
     </ul>
   </div>
