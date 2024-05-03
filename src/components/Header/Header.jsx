@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div>
             <nav>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 bg-gradient-to-r from-[#9873ff19] to-[#7e8ffe1a]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

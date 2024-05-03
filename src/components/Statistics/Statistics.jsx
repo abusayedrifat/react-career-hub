@@ -1,8 +1,10 @@
+import StaticticsBanner from "../StatisticsBanner/StaticticsBanner";
 
 const Statistics = () => {
     return (
         <div>
-            <h2>this is statistics page</h2>
+            <StaticticsBanner></StaticticsBanner>
+            <h2>Job details</h2>
         </div>
     );
 };

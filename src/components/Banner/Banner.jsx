@@ -1,7 +1,7 @@
 import './Banner.css'
 const Banner = () => {
     return (
-      <div className='bg-gradient-to-r from-[#9873ff19] to-[#7e8ffe1a] mt-10 mb-28'>
+      <div className='bg-gradient-to-r from-[#9873ff19] to-[#7e8ffe1a]  mb-28'>
           <div className=" flex justify-between items-center w-3/4 mx-auto">
             <div className='space-y-6'>
                 <h1 className="text-6xl font-extrabold leading-[80px]">
