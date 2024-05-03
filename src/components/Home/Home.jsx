@@ -6,7 +6,7 @@ import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 const Home = () => {
     const featuredJobs = useLoaderData()
     return (
-        <div>
+        <div className=" w-3/4 mx-auto">
             <h1>This is home page</h1>
             <Banner></Banner>
             <CategoryList></CategoryList>
