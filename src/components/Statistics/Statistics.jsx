@@ -37,7 +37,7 @@ const Statistics = () => {
             <p className="flex"> <img src="/src/assets/icons/location2.png" alt="" className="w-[10%]" /> <span>Address</span>{contact_information.address} </p>
               
                 </div>
-                <button>Apply now</button>
+                <button className="btn bg-gradient-to-r from-[#9873ff] to-[#7e8ffe] text-white w-full mt-7">Apply now</button>
                </div>
 
             </div>

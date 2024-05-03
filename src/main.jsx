@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/featuredJob/:id',
-        loader: ()=>fetch(`../jobs.json`) ,
+        loader: ()=>fetch(`../jobs.json`) ,//here we loaded all data. but in real world we should not do it. we will only load one data at a time which one we need.
         element:<Statistics></Statistics>
       },
       {
