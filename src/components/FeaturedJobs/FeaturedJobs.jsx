@@ -21,7 +21,7 @@ const FeaturedJobs = ({jobs}) => {
             <div className='flex gap-1'> <img src="/src/assets/icons/money.png" alt="" /> <p> {salary} </p></div>
             
             </div>
-            <button className='btn btn-outline btn-primary'> <NavLink> View Details </NavLink> </button>
+            <button className='btn bg-gradient-to-r from-[#9873ff] to-[#7e8ffe] text-white'> <NavLink> View Details </NavLink> </button>
         </div>
     );
 };

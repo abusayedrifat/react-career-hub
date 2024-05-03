@@ -7,7 +7,6 @@ const Home = () => {
     const featuredJobs = useLoaderData()
     return (
         <div className=" w-3/4 mx-auto">
-            <h1>This is home page</h1>
             <Banner></Banner>
             <CategoryList></CategoryList>
             <h1 className='text-5xl font-bold text-center'>Featured Jobs</h1>
