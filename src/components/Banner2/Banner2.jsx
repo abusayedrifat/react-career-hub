@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StaticticsBanner = () => {
+const Banner2 = () => {
     return (
         <div className='bg-gradient-to-r from-[#9873ff19] to-[#7e8ffe1a] '>
             <figure>
@@ -14,4 +14,4 @@ const StaticticsBanner = () => {
     );
 };
 
-export default StaticticsBanner;
+export default Banner2;

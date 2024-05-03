@@ -1,9 +1,9 @@
-import StaticticsBanner from "../StatisticsBanner/StaticticsBanner";
+import Banner2 from "../Banner2/Banner2";
 
 const Statistics = () => {
     return (
         <div>
-            <StaticticsBanner></StaticticsBanner>
+            <Banner2></Banner2>
             <h2>Job details</h2>
         </div>
     );
