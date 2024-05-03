@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div>
             <nav>
-            <div className="navbar bg-base-100 bg-gradient-to-r from-[#9873ff19] to-[#7e8ffe1a]">
+            <div className="navbar px-44 bg-base-100 bg-gradient-to-r from-[#9873ff19] to-[#7e8ffe1a]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,9 @@ const Header = () => {
         
       </ul>
     </div>
+    
     <a className="btn btn-ghost text-xl">CareerHub</a>
+   
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex gap-6">
