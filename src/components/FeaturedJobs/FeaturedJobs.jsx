@@ -6,7 +6,7 @@ const FeaturedJobs = ({jobs}) => {
     const {id, logo, job_title,company_name,remote_or_onsite,location,job_type,salary,job_description} = jobs;
 
     return (
-        <div className='p-8 border border-[#75757568] rounded space-y-2'>
+        <div className='p-8 border border-[#75757568] rounded-lg space-y-2'>
             <figure><img src={logo} className='w-[30%]' alt="" /></figure>
             <h2 className='text-lg font-bold'> {job_title} </h2>
             <p> {company_name} </p>
@@ -14,7 +14,7 @@ const FeaturedJobs = ({jobs}) => {
                 <button className='btn btn-sm btn-outline btn-primary'> {remote_or_onsite} </button>
                 <button className='btn btn-sm btn-outline btn-primary'> {job_type} </button>
             </div>
-            <div className='flex gap-5  mt-5'>
+            <div className='flex gap-5 py-5'>
             <div className='flex gap-1'> 
             <img src="/src/assets/icons/Location.png" alt="" />
              <p> {location} </p>

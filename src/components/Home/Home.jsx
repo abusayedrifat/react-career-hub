@@ -14,7 +14,7 @@ const Home = () => {
            <div className=" w-3/4 mx-auto">
            <CategoryList></CategoryList>
             <h1 className='text-5xl font-bold text-center mt-36'>Featured Jobs</h1>
-            <div className="grid grid-cols-2 gap-8 my-20">
+            <div className="grid grid-cols-2 gap-5 my-20">
             {
                 featuredJobs.slice(0, showJobs).map( jobs => <FeaturedJobs jobs={jobs}></FeaturedJobs>)
             }
