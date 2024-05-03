@@ -1,0 +1,9 @@
+p{
+    color: rgb(143, 143, 143);
+    font-weight: 400;
+}
+span{
+    color: rgba(15, 15, 15, 0.842);
+    font-weight: 700;
+    font-size: 20px;
+}
