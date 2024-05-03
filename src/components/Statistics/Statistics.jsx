@@ -34,7 +34,7 @@ const Statistics = () => {
             <hr />
             <p className="flex items-center gap-5"> <img src="/src/assets/icons/phone.png" alt="" /> <span>Phone :</span> {contact_information.phone} </p>
             <p className="flex items-center gap-5"> <img src="/src/assets/icons/email.png" alt="" /> <span>Email :</span> {contact_information.email} </p>
-            <p className="flex"> <img src="/src/assets/icons/location2.png" alt="" className="w-[10%]" /> <span>Address</span>{contact_information.address} </p>
+            <p className="flex gap-5"> <img src="/src/assets/icons/location2.png" alt="" className="w-[10%]" /> <span>Address : </span>{contact_information.address} </p>
               
                 </div>
                 <button className="btn bg-gradient-to-r from-[#9873ff] to-[#7e8ffe] text-white w-full mt-7">Apply now</button>
