@@ -1,6 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Banner2 from "../Banner2/Banner2";
 import './Statitsics.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Statistics = () => {
 
     const jobs = useLoaderData();
@@ -10,6 +13,10 @@ const Statistics = () => {
 
     console.log(currentJob, id);
     const {job_title, salary, experiences, contact_information, educational_requirements, job_responsibility, job_description} = currentJob;
+
+    const handleToastNotify = () =>{
+        toast('you already applied')
+    }
     return (
         <div>
             <Banner2></Banner2>
@@ -37,10 +44,11 @@ const Statistics = () => {
             <p className="flex gap-5"> <img src="/src/assets/icons/location2.png" alt="" className="w-[10%]" /> <span>Address : </span>{contact_information.address} </p>
               
                 </div>
-                <button className="btn bg-gradient-to-r from-[#9873ff] to-[#7e8ffe] text-white w-full mt-7">Apply now</button>
+                <button onClick={handleToastNotify} className="btn bg-gradient-to-r from-[#9873ff] to-[#7e8ffe] text-white w-full mt-7">Apply now</button>
                </div>
 
             </div>
+            <ToastContainer />
         </div>
     );
 };
