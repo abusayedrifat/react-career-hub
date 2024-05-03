@@ -20,7 +20,7 @@ const Home = () => {
             }
             </div>
             <div className={showJobs === featuredJobs.length && 'hidden'}>
-            <button onClick={()=> setShowJobs(featuredJobs.length)} className="btn relative left-[50%] -translate-x-[50%]">Show All</button>
+            <button onClick={()=> setShowJobs(featuredJobs.length)} className="btn mb-28 relative left-[50%] -translate-x-[50%] bg-gradient-to-r from-[#9873ff] to-[#7e8ffe] text-white">Show All</button>
             </div>
            </div>
         </div>
