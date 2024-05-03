@@ -5,8 +5,8 @@ import './FeaturedJobs.css'
 const FeaturedJobs = ({jobs}) => {
     const {logo, job_title,company_name,remote_or_onsite,location,job_type,salary,job_description} = jobs
     return (
-        <div className='p-8 border border-[] rounded space-y-2'>
-            <img src={logo} className='w-[30%]' alt="" />
+        <div className='p-8 border border-[#75757568] rounded space-y-2'>
+            <figure><img src={logo} className='w-[30%]' alt="" /></figure>
             <h2 className='text-lg font-bold'> {job_title} </h2>
             <p> {company_name} </p>
             <div className='flex gap-6'>
