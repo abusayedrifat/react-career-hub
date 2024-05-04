@@ -3,6 +3,7 @@ import Banner2 from "../Banner2/Banner2";
 import './Statitsics.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from "../Utility/localStorage";
 
 const Statistics = () => {
 
@@ -15,7 +16,8 @@ const Statistics = () => {
     const {job_title, salary, experiences, contact_information, educational_requirements, job_responsibility, job_description} = currentJob;
 
     const handleToastNotify = () =>{
-        toast('you already applied')
+        saveJobApplication(id);
+        toast('you have already applied');
     }
     return (
         <div>
