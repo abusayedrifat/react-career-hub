@@ -4,6 +4,7 @@ import './Statitsics.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveJobApplication } from "../Utility/localStorage";
+import { Helmet } from "react-helmet";
 
 const Statistics = () => {
 
@@ -21,6 +22,9 @@ const Statistics = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Career Hub | Statistics</title>
+            </Helmet>
             <Banner2></Banner2>
             <h2 className="text-center font-bold text-4xl relative lg:-top-[150px]">Job details</h2>
             <div className="flex gap-10 justify-between w-3/4 mx-auto my-20">

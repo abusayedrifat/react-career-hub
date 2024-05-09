@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import CategoryList from "../CategoryList/CategoryList";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     const featuredJobs = useLoaderData()
@@ -10,10 +11,13 @@ const Home = () => {
     const [showJobs, setShowJobs] = useState(4);
     return (
         <div >
+            <Helmet>
+                <title>Career Hub | Home</title>
+            </Helmet>
             <Banner></Banner>
            <div className=" w-3/4 mx-auto">
            <CategoryList></CategoryList>
-            <h1 className='text-5xl font-bold text-center mt-36'>Featured Jobs</h1>
+            <h1 className='text-5xl font-bold text-center mt-36 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>Featured Jobs</h1>
             <div className="grid grid-cols-2 gap-5 my-20">
             {
                 featuredJobs.slice(0, showJobs).map( jobs => <FeaturedJobs jobs={jobs}></FeaturedJobs>)
